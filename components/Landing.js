@@ -1,7 +1,9 @@
 import Button from "./Button";
 import Image from "next/image";
+import { publicRuntimeConfig } from "next.config";
 
 export default function Landing({}) {
+  const BASE_PATH = publicRuntimeConfig.BASE_PATH;
   return (
     <div className="flex flex-row">
       <div className="md:w-1/2">
@@ -19,7 +21,7 @@ export default function Landing({}) {
       </div>
       <div className="hidden md:block md:w-1/2 absolute -right-52 scale-150">
         <Image
-          src={"/nitc.png"}
+          src={`${BASE_PATH}/nitc.png`}
           alt="A faded image of NITC"
           width="100%"
           height="40%"

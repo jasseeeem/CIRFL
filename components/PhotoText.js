@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicRuntimeConfig } from "next.config";
 
 export default function PhotoText({
   heading1,
@@ -8,11 +9,13 @@ export default function PhotoText({
   imgSrc,
   imgAlt,
 }) {
+  const BASE_PATH = publicRuntimeConfig.BASE_PATH;
+
   return (
     <div className="flex flex-col md:flex-row space-y-10 space-x-0 md:space-x-10 md:space-y-0 items-center">
       <div className="md:w-1/2">
         <Image
-          src={`/${imgSrc}`}
+          src={`${BASE_PATH}/${imgSrc}`}
           alt={imgAlt}
           width="100%"
           height="60%"
