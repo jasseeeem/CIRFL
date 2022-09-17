@@ -2,7 +2,7 @@ import { CgGym } from "react-icons/cg";
 import { FaFlag, FaUsers } from "react-icons/fa";
 import { MdCenterFocusWeak } from "react-icons/md";
 
-export default function Button({ text, toLink, onClickFunction }) {
+export default function Button({}) {
   const bannerElements = [
     {
       icon: CgGym,
@@ -28,7 +28,7 @@ export default function Button({ text, toLink, onClickFunction }) {
     },
   ];
   return (
-    <div className="rounded-xl shadow-xl grid grid-cols-1 md:grid-cols-4 divide-y-2 md:divide-x-2 items-start justify-between">
+    <div className="rounded-xl shadow-xl grid grid-cols-1 md:grid-cols-4 divide-y-2 md:divide-y-0 md:divide-x-2 items-start justify-between z-10">
       {bannerElements.map((bannerElement) => {
         return (
           <div

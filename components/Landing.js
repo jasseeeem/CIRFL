@@ -19,12 +19,12 @@ export default function Landing({}) {
       </div>
       <div className="hidden md:block md:w-1/2">
         <Image
-          src={"/nitc.jpg"}
+          src={"/nitc.png"}
           alt="A faded image of NITC"
           width="0"
           height="0"
-          sizes="100vw"
-          className="w-full h-auto"
+          sizes="50vw"
+          className="w-1/2 h-auto opacity-20 absolute -right-52 scale-150"
         />
       </div>
     </div>

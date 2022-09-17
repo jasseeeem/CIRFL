@@ -1,6 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Landing from "../components/Landing";
 import Banner from "../components/Banner";
 import PhotoText from "../components/PhotoText";
@@ -9,7 +6,7 @@ export default function Home() {
   return (
     <div className="py-7 px-1 mx-auto max-w-7xl">
       <div className="flex flex-col">
-        <div className="mb-10">
+        <div className="mb-10 static -z-10">
           <Landing />
         </div>
         <Banner />
