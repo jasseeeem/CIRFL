@@ -4,11 +4,9 @@ import PhotoText from "../components/PhotoText";
 
 export default function Home() {
   return (
-    <div className="py-7 px-1 mx-auto max-w-7xl">
+    <div className="py-7 px-1 mx-auto max-w-7xl ">
       <div className="flex flex-col">
-        <div className="mb-10 static -z-10">
-          <Landing />
-        </div>
+        <Landing />
         <Banner />
         <div className="mt-16">
           <PhotoText

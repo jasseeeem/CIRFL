@@ -19,14 +19,14 @@ export default function Landing({}) {
         </p>
         <Button toLink="/learn-more" text="Learn More" />
       </div>
-      <div className="hidden md:block md:w-1/2 absolute -right-52 scale-150">
+      <div className="hidden md:block md:w-1/2">
         <Image
           src={`${BASE_PATH}/nitc.png`}
           alt="A faded image of NITC"
-          width="100%"
+          width="60%"
           height="40%"
           layout="responsive"
-          objectFit="cover"
+          objectFit=""
           className="w-1/2 h-auto opacity-20 "
         />
       </div>
