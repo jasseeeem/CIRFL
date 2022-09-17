@@ -1,4 +1,4 @@
-import Image from "next/future/Image";
+import Image from "next/Image";
 
 export default function PhotoText({
   heading1,
@@ -14,9 +14,10 @@ export default function PhotoText({
         <Image
           src={`/${imgSrc}`}
           alt={imgAlt}
-          width="0"
-          height="0"
-          sizes="100vw"
+          width="100%"
+          height="60%"
+          layout="responsive"
+          objectFit="cover"
           className="w-full h-auto rounded-xl shadow-xl"
         />
       </div>

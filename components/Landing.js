@@ -1,5 +1,5 @@
 import Button from "./Button";
-import Image from "next/future/image";
+import Image from "next/image";
 
 export default function Landing({}) {
   return (
@@ -17,14 +17,15 @@ export default function Landing({}) {
         </p>
         <Button toLink="/learn-more" text="Learn More" />
       </div>
-      <div className="hidden md:block md:w-1/2">
+      <div className="hidden md:block md:w-1/2 absolute -right-52 scale-150">
         <Image
           src={"/nitc.png"}
           alt="A faded image of NITC"
-          width="0"
-          height="0"
-          sizes="50vw"
-          className="w-1/2 h-auto opacity-20 absolute -right-52 scale-150"
+          width="100%"
+          height="40%"
+          layout="responsive"
+          objectFit="cover"
+          className="w-1/2 h-auto opacity-20 "
         />
       </div>
     </div>
