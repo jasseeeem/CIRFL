@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { publicRuntimeConfig } from "next.config";
+import { publicRuntimeConfig } from "../next.config";
 
 export default function PhotoText({
   heading1,

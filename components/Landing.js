@@ -1,6 +1,6 @@
 import Button from "./Button";
 import Image from "next/image";
-import { publicRuntimeConfig } from "next.config";
+import { publicRuntimeConfig } from "../next.config";
 
 export default function Landing({}) {
   const BASE_PATH = publicRuntimeConfig.BASE_PATH;
