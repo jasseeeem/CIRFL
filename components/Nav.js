@@ -68,9 +68,9 @@ function Nav({}) {
               Agreements
             </a>
           </Link>
-          <Link href="/teams">
+          <Link href="/members">
             <a className="tracking-wider leading-5 hover:text-sky-700 transition text-sm">
-              Teams
+              Members
             </a>
           </Link>
 
