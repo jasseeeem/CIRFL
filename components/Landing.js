@@ -13,10 +13,10 @@ export default function Landing({}) {
         <h4 className="pt-5 text-4xl font-bold">
           Centre for International Relations and Foreign Languages
         </h4>
-        <p className="py-7 font-light">
+        {/* <p className="py-7 font-light">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tincidunt ornare magna ullamcorper sodales.{" "}
-        </p>
+        </p> */}
         <Button toLink="/learn-more" text="Learn More" />
       </div>
       <div className="hidden md:block md:w-1/2">

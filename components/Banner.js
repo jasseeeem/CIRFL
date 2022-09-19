@@ -38,7 +38,7 @@ export default function Button({}) {
             <div className="text-sky-700 flex justify-center">
               <bannerElement.icon size="35" />
             </div>
-            <p className="text-sm text-center">
+            <p className="text-md text-center">
               <b>{bannerElement.boldText}</b> {bannerElement.normalText}
             </p>
           </div>
