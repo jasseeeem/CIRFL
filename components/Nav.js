@@ -13,8 +13,10 @@ function Nav({}) {
     <div className="max-w-7xl mx-auto py-5 md:py-7">
       <nav className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex justify-between items-center">
-          <Link href="/" className="hover:cursor-pointer">
-            <h1 className="text-3xl font-extrabold text-sky-700">CIRFL</h1>
+          <Link href="/" className="">
+            <h1 className="text-3xl font-extrabold text-sky-700 hover:cursor-pointer">
+              CIRFL
+            </h1>
           </Link>
           <button
             type="button"
