@@ -13,7 +13,7 @@ function Nav({}) {
     <div className="max-w-7xl mx-auto py-5 md:py-7">
       <nav className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex justify-between items-center">
-          <Link href="/" className="">
+          <Link href="/" className="hover:cursor-pointer">
             <h1 className="text-3xl font-extrabold text-sky-700">CIRFL</h1>
           </Link>
           <button
@@ -68,9 +68,9 @@ function Nav({}) {
               Agreements
             </a>
           </Link>
-          <Link href="/teams">
+          <Link href="/members">
             <a className="tracking-wider leading-5 hover:text-sky-700 transition text-sm">
-              Teams
+              Members
             </a>
           </Link>
 

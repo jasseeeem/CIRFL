@@ -10,10 +10,10 @@ export default function Landing({}) {
         <h6 className="md:pt-10 text-xl font-semibold leading-tight text-sky-700">
           NIT Calicut
         </h6>
-        <h4 className="pt-5 text-4xl font-bold">
+        <h4 className="pt-5 pb-7 text-4xl font-bold">
           Centre for International Relations and Foreign Languages
         </h4>
-        {/* <p className="py-7 font-light">
+        {/* <p className="font-light">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tincidunt ornare magna ullamcorper sodales.{" "}
         </p> */}

@@ -13,7 +13,7 @@ export default function Home() {
             heading1="Our Mission"
             paragraph1="Secure a niche for NITC in the global educational paradigm, foster healthy international collaboration to facilitate research and learning of global standards and support a vigorous
 international exchange of academia and scholastic talent"
-            imgSrc="nitc-board.jpg"
+            imgSrc="nitc-amphitheater.jpg"
             heading2="Our Vision"
             paragraph2="To nourish people and the planet. We're a purpose-driven company that aims to set the standards of excellence for food retailers. Quality is a state of mind at Whole Foods Market."
             alt="An image of the board in front of NITC"

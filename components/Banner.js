@@ -2,7 +2,7 @@ import { CgGym } from "react-icons/cg";
 import { FaFlag, FaUsers } from "react-icons/fa";
 import { MdCenterFocusWeak } from "react-icons/md";
 
-export default function Button({}) {
+export default function Banner({}) {
   const bannerElements = [
     {
       icon: CgGym,
