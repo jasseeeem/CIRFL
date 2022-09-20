@@ -17,7 +17,7 @@ export default function Members() {
     {
       name: "Dr. Sudhish N George",
       position: "Member",
-      department: "Assistant Professor, ECED",
+      department: "Associate Professor, ECED",
       imgSrc:
         "https://media-exp1.licdn.com/dms/image/C5603AQH96bXbIk8PCw/profile-displayphoto-shrink_400_400/0/1517673930283?e=1669248000&v=beta&t=mP3YbT_LtO01YGr8JcMr_HFwfAX0kfR-EAQsl_65rWs",
     },
@@ -92,9 +92,9 @@ export default function Members() {
         <Card
           name="Dr. Baiju G Nair"
           position="Vice Chairperson"
-          department="Assistant Professor, SBT"
+          department="Associate Professor, SBT"
           imgSrc="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Bl00JwcAAAAJ&citpid=4"
-          imgAlt={`Photo of Dr. Baiju G Nair Assistant Professor, SBT`}
+          imgAlt={`Photo of Dr. Baiju G Nair Associate Professor, SBT`}
         />
       </div>
 
