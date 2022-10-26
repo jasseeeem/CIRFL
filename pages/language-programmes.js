@@ -11,7 +11,7 @@ export default function LanguageProgrammes() {
   return (
     <div className="py-7 px-1 mx-auto max-w-7xl">
       <ListWithImage
-        heading={"Language programmes and Other Courses"}
+        heading={"Language Programmes and Other Courses"}
         list={programmesList}
       />
     </div>
