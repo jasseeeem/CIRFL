@@ -81,6 +81,9 @@ export default function Members() {
 
   return (
     <div className="py-5 px-1 mx-auto max-w-7xl ">
+      <h2 className="text-sky-700 text-3xl font-semibold text-center mb-5">
+        Members
+      </h2>
       <div className="flex flex-row gap-3 md:gap-7 justify-center pb-3 md:pb-7">
         <Card
           name="Dr. Ravi Varma M K"

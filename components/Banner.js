@@ -28,22 +28,27 @@ export default function Banner({}) {
     },
   ];
   return (
-    <div className="rounded-xl shadow-xl grid grid-cols-1 md:grid-cols-4 divide-y-2 md:divide-y-0 md:divide-x-2 items-start justify-between z-10">
-      {bannerElements.map((bannerElement) => {
-        return (
-          <div
-            key={bannerElement.icon}
-            className="p-5 md:p-7 flex flex-col space-y-5 justify-center w-full h-full"
-          >
-            <div className="text-sky-700 flex justify-center">
-              <bannerElement.icon size="35" />
+    <div>
+      <h2 className="text-sky-700 text-3xl font-semibold mb-5 text-center">
+        Objectives
+      </h2>
+      <div className="rounded-xl shadow-xl grid grid-cols-1 md:grid-cols-4 divide-y-2 md:divide-y-0 md:divide-x-2 items-start justify-between z-10">
+        {bannerElements.map((bannerElement) => {
+          return (
+            <div
+              key={bannerElement.icon}
+              className="p-5 md:p-7 flex flex-col space-y-5 justify-center w-full h-full"
+            >
+              <div className="text-sky-700 flex justify-center">
+                <bannerElement.icon size="35" />
+              </div>
+              <p className="text-md text-center">
+                <b>{bannerElement.boldText}</b> {bannerElement.normalText}
+              </p>
             </div>
-            <p className="text-md text-center">
-              <b>{bannerElement.boldText}</b> {bannerElement.normalText}
-            </p>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
