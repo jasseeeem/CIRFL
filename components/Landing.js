@@ -17,7 +17,7 @@ export default function Landing({}) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tincidunt ornare magna ullamcorper sodales.{" "}
         </p> */}
-        <Button toLink="/learn-more" text="Learn More" />
+        <Button toLink="/about" text="Learn More" />
       </div>
       <div className="hidden md:block md:w-1/2">
         <Image
