@@ -14,12 +14,18 @@ export default function ListWithImage({ heading, list }) {
         return (
           <li
             key={i}
-            className={`flex flex-col md:flex-row ${
-              item.imgSrc && "space-x-0 md:space-x-5 space-y-2 md:space-y-0"
-            }`}
+            className="flex flex-col p-3 md:p-4 bg-gray-100 rounded-xl shadow-xl space-y-2"
           >
-            <div className={`${item.imgSrc ? "w-full md:w-2/3" : "w-4xl"}`}>
-              <p>{item.text}</p>
+            <div className="w-4xl">
+              {item.text && <p>{item.text}</p>}
+              {item.points &&
+                item.points.map((point, i) => {
+                  return (
+                    <li key={i} className="ml-4">
+                      {point}
+                    </li>
+                  );
+                })}
               {item.link && (
                 <div className="mt-1">
                   <a className="text-indigo-700 hover:underline">
@@ -28,17 +34,22 @@ export default function ListWithImage({ heading, list }) {
                 </div>
               )}
             </div>
-            {item.imgSrc && (
-              <div className="w-full md:w-1/2">
-                <Image
-                  src={`${BASE_PATH}/${item.imgSrc}`}
-                  alt={item.imgAlt}
-                  width="100%"
-                  height="60%"
-                  layout="responsive"
-                  objectFit="cover"
-                  className="rounded-xl shadow-xl"
-                />
+            {item.images && item.images.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                {item.images.map((image, i) => {
+                  return (
+                    <Image
+                      key={i}
+                      src={`${BASE_PATH}/${image.imgSrc}`}
+                      alt={image.imgAlt}
+                      width="100%"
+                      height="60%"
+                      layout="responsive"
+                      objectFit="cover"
+                      className="rounded-xl shadow-xl"
+                    />
+                  );
+                })}
               </div>
             )}
           </li>

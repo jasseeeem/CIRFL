@@ -1,6 +1,8 @@
 import Card from "../components/Card";
+import { publicRuntimeConfig } from "../next.config";
 
 export default function Members() {
+  const BASE_PATH = publicRuntimeConfig.BASE_PATH;
   const members = [
     {
       name: "Dr. Satyananda Panda",
@@ -46,8 +48,7 @@ export default function Members() {
       name: "Dr. Preeti Navaneeth",
       position: "Member",
       department: "Assistant Professor, SOMS",
-      imgSrc:
-        "https://png.pngtree.com/png-vector/20191026/ourlarge/pngtree-avatar-vector-icon-white-background-png-image_1870181.jpg",
+      imgSrc: `${BASE_PATH}/preeti.jpg`,
     },
     {
       name: "Dr. Chandra Sekhar Bastha",

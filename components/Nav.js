@@ -1,9 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
+import { publicRuntimeConfig } from "../next.config";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 export { Nav };
 
 function Nav({}) {
+  const BASE_PATH = publicRuntimeConfig.BASE_PATH;
+
   const [toggle, setToggle] = useState(false);
 
   const toggleButton = () => {
@@ -15,9 +19,20 @@ function Nav({}) {
       <nav className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex justify-between items-center">
           <Link href="/" className="">
-            <h1 className="text-3xl font-extrabold text-sky-700 hover:cursor-pointer">
-              CIRFL
-            </h1>
+            <div>
+              {/* <Image
+                src={`${BASE_PATH}/cirfl_logo.png`}
+                alt="CIRFL Logo"
+                width="50%"
+                height="50%"
+                layout="responsive"
+                objectFit=""
+                className="rounded-full"
+              /> */}
+              <h1 className="text-3xl font-extrabold text-sky-700 hover:cursor-pointer">
+                CIRFL
+              </h1>
+            </div>
           </Link>
           <button
             type="button"
@@ -37,9 +52,9 @@ function Nav({}) {
               About Us
             </a>
           </Link>
-          <Link href="/mous">
+          <Link href="/collaborations">
             <a className="tracking-wider leading-5 hover:text-sky-700 transition text-sm">
-              MOUs
+              Collaborations
             </a>
           </Link>
           <Link href="/activities">
@@ -67,15 +82,9 @@ function Nav({}) {
               Members
             </a>
           </Link>
-
           <Link href="/gallery">
             <a className="tracking-wider leading-5 hover:text-sky-700 transition text-sm">
               Gallery
-            </a>
-          </Link>
-          <Link href="/events">
-            <a className="tracking-wider leading-5 hover:text-sky-700 transition text-sm">
-              Events
             </a>
           </Link>
         </div>
