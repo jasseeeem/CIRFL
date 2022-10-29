@@ -11,9 +11,9 @@ export default function Activities() {
         "He shared his valuable experience and motivated students by providing them with directions regarding their career-building in response to the worldwide need for better technological solutions.",
       ],
       images: [
-        { imgSrc: "rajeev_1.jpg", imgAlt: "Shri. Rajeev with panel members" },
-        { imgSrc: "rajeev_2.jpg", imgAlt: "Shri. Rajeev giving a talk" },
-        { imgSrc: "rajeev_3.jpg", imgAlt: "Shri. Rajeev giving a talk" },
+        { imgSrc: "rajeev_1.png", imgAlt: "Shri. Rajeev with panel members" },
+        { imgSrc: "rajeev_2.png", imgAlt: "Shri. Rajeev giving a talk" },
+        { imgSrc: "rajeev_3.png", imgAlt: "Shri. Rajeev giving a talk" },
       ],
     },
     {
