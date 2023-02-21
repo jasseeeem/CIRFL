@@ -15,7 +15,7 @@ export default function Home() {
 international exchange of academia and scholastic talent"
             imgSrc="nitc-amphitheater.jpg"
             heading2="Our Vision"
-            paragraph2="To nourish people and the planet. We're a purpose-driven company that aims to set the standards of excellence for food retailers. Quality is a state of mind at Whole Foods Market."
+            paragraph2="Mobilise, Collaborate and Transpire Global Educational/Academic Exchange"
             alt="An image of the board in front of NITC"
           />
         </div>
